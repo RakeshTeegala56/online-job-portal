@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>ojp</display-name>
+	<servlet>
+		<servlet-name>JobseekerSignup</servlet-name>
+		<servlet-class>registration.JobseekerSignupServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>JobseekerSignup</servlet-name>
+		<url-pattern>/jobseekerSignup</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RecruiterSignup</servlet-name>
+		<servlet-class>registration.RecruiterSignupServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RecruiterSignup</servlet-name>
+		<url-pattern>/recruiterSignup</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>login.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/userLogin</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>createJob</servlet-name>
+		<servlet-class>recruiter.CreateJobServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>createJob</servlet-name>
+		<url-pattern>/createJob</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UpdateJob</servlet-name>
+		<servlet-class>recruiter.UpdateJobServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateJob</servlet-name>
+		<url-pattern>/updateJob</url-pattern>
+	</servlet-mapping>	
+
+	<servlet>
+		<servlet-name>DeleteJob</servlet-name>
+		<servlet-class>recruiter.DeleteJobServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteJob</servlet-name>
+		<url-pattern>/deleteJob</url-pattern>
+	</servlet-mapping>	
+
+</web-app>

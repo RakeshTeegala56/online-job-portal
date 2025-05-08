@@ -1,0 +1,19 @@
+
+.contact-description {
+    padding: 120px 20px 150px; /* Top padding to avoid header overlap, bottom for footer */
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contact-description h2 {
+    font-size: 2rem;
+    color: #0d6efd;
+    margin-bottom: 20px;
+}
+
+.contact-description p {
+    font-size: 1rem;
+    color: #333;
+    max-width: 700px;
+    margin: 10px auto;
+}
